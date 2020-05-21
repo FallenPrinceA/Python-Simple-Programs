@@ -7,4 +7,6 @@ income = float(input('What is your income? '))
 print('Here is the data you entered:')
 print('Name:', name)
 print('Age:', age)
-print('Income:', income)
+print('Income: $',
+      format(income, '.2f'),
+      sep='')
