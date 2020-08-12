@@ -1,0 +1,26 @@
+# Purpose: To create three dictionaries and allow user to insert course and gain
+    # all the revelvant information about that course. You can add more courses to the program if you like and it will still work. 
+
+# Course Room Dictionary
+course_rooms = {'CS101':3004, 'CS102':4501, 'CS103':6755, 'NT110':1244, 
+                'CM241':1411}
+
+# Course Instructor Dictionary
+course_instructors = {'CS101':'Haynes', 'CS102':'Alvarado', 'CS103':'Rich', 
+                      'NT110':'Burke', 'CM241':'Lee'}
+
+# Courses Times Dictionary
+course_times = {'CS101':'8:00 a.m.', 'CS102':'9:00 a.m.', 'CS103':'10:00 a.m.',
+                'NT110':'11:00 a.m.', 'CM241':'1:00 p.m.'}
+
+# Obtaining a course number from the user
+course = input('Enter a course number: ')
+
+# Printing the information for the course or a error message
+try:
+    print('-----------------------------------')
+    print('Room Number: ', course_rooms[course])
+    print('Instructor: ', course_instructors[course])
+    print('Meeting Time: ', course_times[course])
+except KeyError:
+    print('Invalid Course number.')
